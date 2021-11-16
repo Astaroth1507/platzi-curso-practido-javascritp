@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas | Curso práctico de JS</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Figuras Geométricas
+        </h1>
+        <p>
+            este es el primer taller de mi curso de JS
+        </p>
+    </header>
+    <section>
+        <h2>
+            Calcula el área y el perímetro de un cuadrado
+        </h2>
+        <form>
+            <label for="InputCuadrado">
+                Escribe cuanto mide cada lado de tu cuadrado:
+            </label>
+            <input id="InputCuadrado" type="number" />
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular el perimetro
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular el área
+            </button>
+        </form>
+    </section>
+    <section>
+        <h2>
+            Calcula el área y el perímetro de un triangulo
+        </h2>
+        <form>
+            <label for="inputTriangulo">
+                Escribe cuanto mide cada lado de tu triangulo
+            </label>
+            <input id="lado1" type="number" />
+            <input id="lado2" type="number" />
+            <input id="lado3" type="number" />
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+                Calcular el perimetro
+            </button><br><br><br>
+            <label for="inputTriangulo">
+                Escribe cuanto mide la base y la altura de tu triangulo
+            </label for="base-altura">
+            <input id="Inputbase" type="number" placeholder="base">
+            <input id="Inputaltura" type="number" placeholder="altura">
+            <button type="button" onclick="calcularAreaTriangulo()">
+                Calcular el área
+            </button><br><br><br>
+            <label for="inputAlturaTriangulo">
+                Escribe la medida de los lados de tu triangulo
+                <input type="number" id="alturaL1" placeholder="ladoA" />
+                <input type="number" id="alturaL2" placeholder="ladoB"/>
+                <input type="number" id="baseAltura" placeholder="Base" />
+                <button type="button" onclick="calcularAlturaTriangulo()"> calcular la altura
+                </button>
+            </label>
+        </form>
+    </section>
+    <script src="./figuras.js"></script>
+</body>
+
+</html>
